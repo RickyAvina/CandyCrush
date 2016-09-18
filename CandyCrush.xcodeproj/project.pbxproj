@@ -14,6 +14,12 @@
 		940AF7BA1D8CD50C0020C334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940AF7B81D8CD50C0020C334 /* Main.storyboard */; };
 		940AF7BC1D8CD50D0020C334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940AF7BB1D8CD50D0020C334 /* Assets.xcassets */; };
 		940AF7BF1D8CD50D0020C334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940AF7BD1D8CD50D0020C334 /* LaunchScreen.storyboard */; };
+		940AF7C71D8E2B9E0020C334 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940AF7C61D8E2B9E0020C334 /* Cookie.swift */; };
+		940AF7C91D8E4B060020C334 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940AF7C81D8E4B060020C334 /* Array2D.swift */; };
+		940AF7CB1D8E55890020C334 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940AF7CA1D8E55890020C334 /* Level.swift */; };
+		940AF7CD1D8F3F390020C334 /* Levels in Resources */ = {isa = PBXBuildFile; fileRef = 940AF7CC1D8F3F390020C334 /* Levels */; };
+		940AF7CF1D8F40310020C334 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940AF7CE1D8F40310020C334 /* Tile.swift */; };
+		940AF7D11D8F40E60020C334 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940AF7D01D8F40E60020C334 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		940AF7BB1D8CD50D0020C334 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		940AF7BE1D8CD50D0020C334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		940AF7C01D8CD50D0020C334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		940AF7C61D8E2B9E0020C334 /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
+		940AF7C81D8E4B060020C334 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		940AF7CA1D8E55890020C334 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		940AF7CC1D8F3F390020C334 /* Levels */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Levels; sourceTree = "<group>"; };
+		940AF7CE1D8F40310020C334 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tile.swift; path = ../Tile.swift; sourceTree = "<group>"; };
+		940AF7D01D8F40E60020C334 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +56,7 @@
 			children = (
 				940AF7AF1D8CD50C0020C334 /* CandyCrush */,
 				940AF7AE1D8CD50C0020C334 /* Products */,
+				940AF7CC1D8F3F390020C334 /* Levels */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +71,14 @@
 		940AF7AF1D8CD50C0020C334 /* CandyCrush */ = {
 			isa = PBXGroup;
 			children = (
+				940AF7CE1D8F40310020C334 /* Tile.swift */,
 				940AF7B01D8CD50C0020C334 /* AppDelegate.swift */,
 				940AF7B21D8CD50C0020C334 /* GameScene.sks */,
 				940AF7B41D8CD50C0020C334 /* GameScene.swift */,
+				940AF7C61D8E2B9E0020C334 /* Cookie.swift */,
+				940AF7CA1D8E55890020C334 /* Level.swift */,
+				940AF7D01D8F40E60020C334 /* Extensions.swift */,
+				940AF7C81D8E4B060020C334 /* Array2D.swift */,
 				940AF7B61D8CD50C0020C334 /* GameViewController.swift */,
 				940AF7B81D8CD50C0020C334 /* Main.storyboard */,
 				940AF7BB1D8CD50D0020C334 /* Assets.xcassets */,
@@ -102,7 +120,7 @@
 				TargetAttributes = {
 					940AF7AC1D8CD50C0020C334 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 6NEUAR985J;
+						DevelopmentTeam = KYVYVR927G;
 					};
 				};
 			};
@@ -129,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940AF7CD1D8F3F390020C334 /* Levels in Resources */,
 				940AF7B31D8CD50C0020C334 /* GameScene.sks in Resources */,
 				940AF7BF1D8CD50D0020C334 /* LaunchScreen.storyboard in Resources */,
 				940AF7BC1D8CD50D0020C334 /* Assets.xcassets in Resources */,
@@ -143,7 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940AF7CB1D8E55890020C334 /* Level.swift in Sources */,
 				940AF7B51D8CD50C0020C334 /* GameScene.swift in Sources */,
+				940AF7C71D8E2B9E0020C334 /* Cookie.swift in Sources */,
+				940AF7D11D8F40E60020C334 /* Extensions.swift in Sources */,
+				940AF7CF1D8F40310020C334 /* Tile.swift in Sources */,
+				940AF7C91D8E4B060020C334 /* Array2D.swift in Sources */,
 				940AF7B71D8CD50C0020C334 /* GameViewController.swift in Sources */,
 				940AF7B11D8CD50C0020C334 /* AppDelegate.swift in Sources */,
 			);
@@ -258,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CandyCrush/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = InternTeam.CandyCrush;
@@ -269,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CandyCrush/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = InternTeam.CandyCrush;

@@ -10,7 +10,9 @@ import UIKit
 import SpriteKit
 
 class GameViewController: UIViewController {
-
+    
+    var level : Level!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,7 +28,14 @@ class GameViewController: UIViewController {
             /* Set the scale mode to scale to fit the window */
             scene.scaleMode = .AspectFill
             
+            level = Level(filename: "Level_1")
+            scene.level = level
+            
             skView.presentScene(scene)
+            
+            let newCookies = level.shuffle()
+            scene.addSpritesForCookies(newCookies)
+
         }
     }
 
@@ -36,7 +45,7 @@ class GameViewController: UIViewController {
 
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
         if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-            return .AllButUpsideDown
+            return .Portrait
         } else {
             return .All
         }
@@ -45,9 +54,18 @@ class GameViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Release any cached data, images, etc that aren't in use.
+
     }
 
     override func prefersStatusBarHidden() -> Bool {
         return true
+    }
+    
+    func fun1(){
+        func fun2(){
+            func fun3(){
+                print("ayy")
+            }
+        }
     }
 }
