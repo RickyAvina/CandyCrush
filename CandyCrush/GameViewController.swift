@@ -28,13 +28,15 @@ class GameViewController: UIViewController {
             /* Set the scale mode to scale to fit the window */
             scene.scaleMode = .AspectFill
             
-            level = Level(filename: "Level_1")
+            level = Level(filename: "Level_3")
             scene.level = level
             
             skView.presentScene(scene)
             
             let newCookies = level.shuffle()
             scene.addSpritesForCookies(newCookies)
+            
+            scene.addTiles()
 
         }
     }
